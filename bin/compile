@@ -32,6 +32,7 @@ DISTRIBUTE_VERSION="0.6.36"
 
 # Setup bpwatch
 export PATH=$PATH:$ROOT_DIR/vendor/bpwatch
+export PATH=$PATH:$ROOT_DIR/vendor/bin
 LOGPLEX_KEY="t.b396af7f-ad75-4643-8b9e-ebb288acc624"
 export BPWATCH_STORE_PATH=$CACHE_DIR/bpwatch.json
 BUILDPACK_VERSION=v28
