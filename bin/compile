@@ -210,6 +210,10 @@ cd $ROOT_DIR/vendor/
   find lib | cpio -pudm /app/.heroku/python/
 cd $WORKING_DIR
 
+export BLAS=/app/.heroku/python/lib/atlas/libblas.so
+export LAPACK=/app/.heroku/python/lib/atlas/liblapack.so
+export ATLAS=/app/.heroku/python/lib/libatlas.so
+
 cp $ROOT_DIR/site.cfg ~/.numpy-site.cfg
 
 # Install Mercurial if it appears to be required.
